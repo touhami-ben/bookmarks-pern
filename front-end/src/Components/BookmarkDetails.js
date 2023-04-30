@@ -6,23 +6,23 @@ import axios from "axios";
 function BookmarkDetails() {
   const [bookmark, setBookmark] = useState([]);
 
-  const { id } = useParams();
-  const navigate = useNavigate();
+  const { id } = useParams();//we use params when we wanna get bookmark id(destructure id)
+  const navigate = useNavigate();// use navigate when we wanna return to bookmarks (plural)
 
   useEffect(()=>{
     axios.get(`${API}/bookmarks/${id}`).then((response)=>{
-      console.log(response.data)
+      // console.log(response.data)
       setBookmark(response.data)
     }).catch((e)=>{
       console.warn("catch:", e)
     });
-  },[id]);
+  }, [id]);
 
   const handleDelete = () => {
-    deleteBookmark();
+    deleteBookmark();//call the function
   };
 
-  const deleteBookmark = () => {
+  const deleteBookmark = () => {//in delete we don't use useEffect so we call the data inside the function delete
     axios
       .delete(`${API}/bookmarks/${id}`)
       .then(() => {
@@ -48,7 +48,7 @@ function BookmarkDetails() {
         <Link to={`/bookmarks`}>
           <button>Back</button>
         </Link>
-      </div>
+      </div> 
       <div>
         <Link to={`/bookmarks/id/edit`}>
           <button>Edit</button>
