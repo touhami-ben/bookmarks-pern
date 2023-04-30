@@ -1,5 +1,6 @@
 // DEPENDENCIES
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import React from "react";
 
 // PAGES
 import Edit from "./Pages/Edit";
