@@ -11,7 +11,11 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.0.0",
+<<<<<<< HEAD
     "react-scripts": "^5.0.1",
+=======
+    "react-scripts": "^5.0.0",
+>>>>>>> e7f9f8bd536b143623d84fa3c2da5c1109d824cd
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -24,11 +28,15 @@
     "extends": [
       "react-app",
       "react-app/jest"
+<<<<<<< HEAD
     ],
     "rules": {
       "react/jsx-uses-react": "off",
       "react/react-in-jsx-scope": "off"
     }
+=======
+    ]
+>>>>>>> e7f9f8bd536b143623d84fa3c2da5c1109d824cd
   },
   "browserslist": {
     "production": [

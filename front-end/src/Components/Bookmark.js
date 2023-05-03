@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 // import React from "react";
 
 function Bookmark({ bookmark }) {  //doesn't need useState
+=======
+
+function Bookmark({ bookmark }) {
+>>>>>>> e7f9f8bd536b143623d84fa3c2da5c1109d824cd
   return (
     <tr>
       <td>
